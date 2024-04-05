@@ -12,8 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
   m_Name: ReferenceImageLibrary
   m_EditorClassIdentifier: 
-  m_GuidLow: 0
-  m_GuidHigh: 0
+  m_GuidLow: 4768373310687485633
+  m_GuidHigh: 189953114165899906
   m_DataStore:
     m_Storage: []
-  m_Images: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 4819100176330336739
+      m_GuidHigh: 10394670771791847816
+    m_SerializedTextureGuid:
+      m_GuidLow: 4489430447573804046
+      m_GuidHigh: 8093285910251078152
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Dummy Floorprint
+    m_Texture: {fileID: 0}
