@@ -1,0 +1,12 @@
+.vsconfig
+.idea
+.DS_Store
+
+[Ll]ibrary/
+[Bb]uild/
+[Tt]emp/
+[Ll]ogs/
+[Oo]bj/
+
+ARFoundationRemote*
+attach_pid*
