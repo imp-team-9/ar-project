@@ -973,7 +973,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - name: FloorA
-    prefab: {fileID: 573050206879923284, guid: 05ed2ad035fb506458c5b65fbe4c8522, type: 3}
+    prefab: {fileID: 9211980670944738505, guid: 05ed2ad035fb506458c5b65fbe4c8522,
+      type: 3}
   - name: FloorB
     prefab: {fileID: 7747908085629723143, guid: 5c13c6e7d5a10c609973f38d90016f64,
       type: 3}
