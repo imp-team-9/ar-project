@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "26171FDF6006LV",
     "m_SelectedProcess": {
-        "deviceId": "26171FDF6006LV",
-        "name": "com.unity.template.ar_mobile",
-        "processId": 29580,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -17,38 +17,26 @@
         {
             "deviceId": "26171FDF6006LV",
             "name": "com.unity.template.ar_mobile",
-            "processId": 26454,
-            "exited": true
-        },
-        {
-            "deviceId": "26171FDF6006LV",
-            "name": "com.unity.template.ar_mobile",
-            "processId": 26867,
-            "exited": true
-        },
-        {
-            "deviceId": "26171FDF6006LV",
-            "name": "com.unity.template.ar_mobile",
-            "processId": 27280,
-            "exited": true
-        },
-        {
-            "deviceId": "26171FDF6006LV",
-            "name": "com.unity.template.ar_mobile",
-            "processId": 27675,
+            "processId": 18277,
             "exited": true
         },
         {
             "deviceId": "26171FDF6006LV",
             "name": "com.unity.template.ar_mobileARCompanion",
-            "processId": 28110,
-            "exited": false
+            "processId": 18646,
+            "exited": true
         },
         {
             "deviceId": "26171FDF6006LV",
             "name": "com.unity.template.ar_mobile",
-            "processId": 29580,
-            "exited": false
+            "processId": 19529,
+            "exited": true
+        },
+        {
+            "deviceId": "26171FDF6006LV",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 19998,
+            "exited": true
         }
     ],
     "m_Tags": {

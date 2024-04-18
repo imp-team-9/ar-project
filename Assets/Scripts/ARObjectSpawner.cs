@@ -53,7 +53,6 @@ public class ARObjectSpawner : MonoBehaviour
 
     private void OnImageChanged(ARTrackedImagesChangedEventArgs args)
     {
-        Debug.Log("Image changed");
         foreach (ARTrackedImage image in args.added)
         {
             UpdateSpawned(image);
