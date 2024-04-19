@@ -79,6 +79,8 @@ public class ARObjectSpawner : MonoBehaviour
             spawned.gameObject.transform.position = image.transform.position;
             spawned.gameObject.transform.rotation = image.transform.rotation;
             spawned.gameObject.SetActive(true);
+
+         
         }
         else
         {
