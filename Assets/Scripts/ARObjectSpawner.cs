@@ -77,10 +77,18 @@ public class ARObjectSpawner : MonoBehaviour
         if (image.trackingState == TrackingState.Tracking)
         {
             spawned.gameObject.transform.position = image.transform.position;
-            spawned.gameObject.transform.rotation = image.transform.rotation;
-            spawned.gameObject.SetActive(true);
 
-         
+            if (image.transform.rotation.eulerAngles.x > 45 || image.transform.rotation.eulerAngles.z > 45 ||
+                image.transform.rotation.eulerAngles.x < -45 || image.transform.rotation.eulerAngles.z < -45)
+            {
+                spawned.gameObject.transform.rotation = image.transform.rotation;
+            }
+            else
+            {
+                spawned.gameObject.transform.rotation = Quaternion.Euler(0, image.transform.rotation.eulerAngles.y, 0);
+            }
+
+            spawned.gameObject.SetActive(true);
         }
         else
         {
