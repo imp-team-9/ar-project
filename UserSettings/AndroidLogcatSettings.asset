@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "26171FDF6006LV",
     "m_SelectedProcess": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "26171FDF6006LV",
+        "name": "com.unity.template.ar_mobile",
+        "processId": 8554,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -17,26 +17,104 @@
         {
             "deviceId": "26171FDF6006LV",
             "name": "com.unity.template.ar_mobile",
-            "processId": 18277,
+            "processId": 2703,
             "exited": true
         },
         {
             "deviceId": "26171FDF6006LV",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 3256,
+            "exited": true
+        },
+        {
+            "deviceId": "26171FDF6006LV",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 3754,
+            "exited": true
+        },
+        {
+            "deviceId": "26171FDF6006LV",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 4200,
+            "exited": true
+        },
+        {
+            "deviceId": "26171FDF6006LV",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 4658,
+            "exited": false
+        },
+        {
+            "deviceId": "26171FDF6006LV",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 5159,
+            "exited": false
+        },
+        {
+            "deviceId": "26171FDF6006LV",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 5630,
+            "exited": false
+        },
+        {
+            "deviceId": "26171FDF6006LV",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 6076,
+            "exited": false
+        },
+        {
+            "deviceId": "26171FDF6006LV",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 6491,
+            "exited": false
+        },
+        {
+            "deviceId": "26171FDF6006LV",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 6913,
+            "exited": false
+        },
+        {
+            "deviceId": "26171FDF6006LV",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 7342,
+            "exited": false
+        },
+        {
+            "deviceId": "26171FDF6006LV",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 7733,
+            "exited": false
+        },
+        {
+            "deviceId": "26171FDF6006LV",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 8146,
+            "exited": false
+        },
+        {
+            "deviceId": "26171FDF6006LV",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 8554,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020X5V",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 27404,
+            "exited": true
+        },
+        {
+            "deviceId": "R54R3020X5V",
             "name": "com.unity.template.ar_mobileARCompanion",
-            "processId": 18646,
+            "processId": 29762,
             "exited": true
         },
         {
-            "deviceId": "26171FDF6006LV",
-            "name": "com.unity.template.ar_mobile",
-            "processId": 19529,
-            "exited": true
-        },
-        {
-            "deviceId": "26171FDF6006LV",
-            "name": "com.unity.template.ar_mobile",
-            "processId": 19998,
-            "exited": true
+            "deviceId": "R54R3020X5V",
+            "name": "com.unity.template.ar_mobileARCompanion",
+            "processId": 30373,
+            "exited": false
         }
     ],
     "m_Tags": {
