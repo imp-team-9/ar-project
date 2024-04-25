@@ -15,7 +15,6 @@ public struct PlaceablePrefabs
 public struct SpawnedPrefab
 {
     public GameObject gameObject;
-
 }
 
 public class ARObjectSpawner : MonoBehaviour
