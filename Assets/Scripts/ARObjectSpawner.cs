@@ -78,8 +78,8 @@ public class ARObjectSpawner : MonoBehaviour
         {
             spawned.gameObject.transform.position = image.transform.position;
 
-            if (image.transform.rotation.eulerAngles.x > 45 || image.transform.rotation.eulerAngles.z > 45 ||
-                image.transform.rotation.eulerAngles.x < -45 || image.transform.rotation.eulerAngles.z < -45)
+            if (image.transform.rotation.eulerAngles.x > 60 || image.transform.rotation.eulerAngles.z > 60 ||
+                image.transform.rotation.eulerAngles.x < -60 || image.transform.rotation.eulerAngles.z < -60)
             {
                 spawned.gameObject.transform.rotation = image.transform.rotation;
             }

@@ -7,14 +7,8 @@ public class FurnitureController : MonoBehaviour
       public LayerMask layerMask;
      private GameObject? selectedPrefab = null;
     
-    
-
-    
      void Update()
     {
-        
-
-
         if ( Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -42,6 +36,4 @@ public class FurnitureController : MonoBehaviour
     {
         selectedPrefab = prefab;
     }
-
-    
 }
