@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "26171FDF6006LV",
     "m_SelectedProcess": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "26171FDF6006LV",
+        "name": "com.unity.template.ar_mobile",
+        "processId": 17759,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -13,12 +13,6 @@
             "name": "com.android.launcher3",
             "processId": 2357,
             "exited": false
-        },
-        {
-            "deviceId": "26171FDF6006LV",
-            "name": "com.unity.template.ar_mobile",
-            "processId": 14191,
-            "exited": true
         },
         {
             "deviceId": "26171FDF6006LV",
@@ -37,6 +31,18 @@
             "name": "com.unity.template.ar_mobile",
             "processId": 15566,
             "exited": true
+        },
+        {
+            "deviceId": "26171FDF6006LV",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 16098,
+            "exited": true
+        },
+        {
+            "deviceId": "26171FDF6006LV",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 17759,
+            "exited": false
         },
         {
             "deviceId": "R54R3020X5V",

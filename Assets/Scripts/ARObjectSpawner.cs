@@ -76,7 +76,7 @@ public class ARObjectSpawner : MonoBehaviour
         if (image.trackingState == TrackingState.Tracking)
         {
             spawned.gameObject.transform.position = image.transform.position;
-            spawned.gameObject.transform.position += new Vector3(-0.025f, 0, -0.1f);
+            spawned.gameObject.transform.position += new Vector3(0, 0, -0.1f);
 
             if (image.transform.rotation.eulerAngles.x > 60 || image.transform.rotation.eulerAngles.z > 60 ||
                 image.transform.rotation.eulerAngles.x < -60 || image.transform.rotation.eulerAngles.z < -60)
