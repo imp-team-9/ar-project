@@ -28,8 +28,8 @@ MonoBehaviour:
     m_Name: FloorA
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
-      m_GuidLow: 4942894066818443224
-      m_GuidHigh: 8626977651927965631
+      m_GuidLow: 5761085648253700615
+      m_GuidHigh: 13571418733076246687
     m_SerializedTextureGuid:
       m_GuidLow: 16506219176102752452
       m_GuidHigh: 10168978939607276155

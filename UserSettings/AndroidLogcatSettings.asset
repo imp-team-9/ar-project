@@ -1,5 +1,5 @@
 {
-    "m_SelectedDeviceId": "26171FDF6006LV",
+    "m_SelectedDeviceId": "R54R3020X5V",
     "m_SelectedProcess": {
         "deviceId": "",
         "name": "",
@@ -37,6 +37,24 @@
             "name": "com.unity.template.ar_mobile",
             "processId": 19998,
             "exited": true
+        },
+        {
+            "deviceId": "R54R3020X5V",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 27404,
+            "exited": true
+        },
+        {
+            "deviceId": "R54R3020X5V",
+            "name": "com.unity.template.ar_mobileARCompanion",
+            "processId": 29762,
+            "exited": true
+        },
+        {
+            "deviceId": "R54R3020X5V",
+            "name": "com.unity.template.ar_mobileARCompanion",
+            "processId": 30373,
+            "exited": false
         }
     ],
     "m_Tags": {
