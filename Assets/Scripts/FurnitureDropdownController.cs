@@ -5,7 +5,7 @@ using UnityEngine;
 public class FurnitureDropdownController : MonoBehaviour
 {
    public GameObject xrorigin;
-    public GameObject[] furnitures;
+   public GameObject[] furnitures;
   
 
     public void OnDropdownEvent(int index)
