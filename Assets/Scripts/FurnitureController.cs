@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class FurnitureController : MonoBehaviour
 {
-      public LayerMask layerMask;
-      private GameObject? selectedPrefab = null;
-      public TMPro.TMP_Dropdown dropdown;
+    public AudioSource audio;
+    public LayerMask layerMask;
+    public TMPro.TMP_Dropdown dropdown;
+
+    private GameObject? selectedPrefab = null;
     
-     void Update()
+    void Update()
     {
         if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
@@ -32,6 +34,7 @@ public class FurnitureController : MonoBehaviour
                     furniture.transform.parent = floorAobject.transform;
                 }
                 
+                audio.Play();
                 dropdown.value = 0;
             }
         }

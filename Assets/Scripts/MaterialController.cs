@@ -8,6 +8,7 @@ using UnityEngine.XR.ARSubsystems;
 public class MaterialController : MonoBehaviour
 {
     public LayerMask layerMask;
+    public AudioSource audio;
 
     private Material? selectedMatrial = null;
 
@@ -22,6 +23,7 @@ public class MaterialController : MonoBehaviour
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask) && selectedMatrial != null)
             {
                 hit.transform.gameObject.GetComponent<Renderer>().material = selectedMatrial;
+				audio.Play();
             }
         }
     }
