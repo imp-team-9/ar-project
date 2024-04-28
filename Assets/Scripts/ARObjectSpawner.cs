@@ -77,9 +77,15 @@ public class ARObjectSpawner : MonoBehaviour
         if (image.trackingState == TrackingState.Tracking)
         {
             spawned.gameObject.transform.position = image.transform.position;
-            
+            if (name == "floor_plan2")
+            {
+                spawned.gameObject.transform.rotation = Quaternion.Euler(new Vector3(0, 180f, 0));
+            }if (name == "floor_plan1")
+            {
+                Debug.Log(image.transform.position);
+                spawned.gameObject.transform.rotation = Quaternion.Euler(new Vector3(0, 20f, 0));
+            }
 
-            
 
             spawned.gameObject.SetActive(true);
         }
