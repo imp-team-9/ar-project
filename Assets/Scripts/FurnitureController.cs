@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class FurnitureController : MonoBehaviour
 {
-      public LayerMask layerMask;
-      private GameObject? selectedPrefab = null;
-      public TMPro.TMP_Dropdown dropdown;
+    public LayerMask layerMask;
+    public AudioSource audio;
+    public TMPro.TMP_Dropdown dropdown;
+
+    private GameObject? selectedPrefab = null;
     
-     void Update()
+    void Update()
     {
         if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
@@ -33,6 +35,7 @@ public class FurnitureController : MonoBehaviour
                 }
                 
                 dropdown.value = 0;
+				audio.Play();
             }
         }
     }
