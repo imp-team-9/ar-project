@@ -19,19 +19,14 @@ public class FurnitureController : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
             {
-                Vector3 spawnPosition = hit.point+Vector3.up*0.01f; 
+                Vector3 spawnPosition = hit.point+Vector3.up*0.03f; 
                 GameObject furniture = Instantiate(selectedPrefab, spawnPosition, Quaternion.identity); 
 
-                GameObject floorBobject = GameObject.Find("FloorB");
-                GameObject floorAobject = GameObject.Find("FloorA");
+             
 
-                if (floorBobject != null)
+                if (hit.transform != null)
                 {
-                     furniture.transform.parent = floorBobject.transform;
-                }
-                else if (floorAobject != null)
-                {
-                    furniture.transform.parent = floorAobject.transform;
+                    furniture.transform.SetParent(hit.transform);
                 }
                 
                 dropdown.value = 0;
