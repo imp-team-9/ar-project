@@ -7,7 +7,9 @@
 [Tt]emp/
 [Ll]ogs/
 [Oo]bj/
+[Uu]ser[Ss]ettings/
 
 ARFoundationRemote*
 attach_pid*
-ARFoundationRemoteInstaller
+*.csproj
+*.sln
