@@ -14,6 +14,7 @@ public class DrangAndMove : MonoBehaviour
 
      RaycastHit hitLayerMask;
     Vector3 distance;
+    
 
     private void Update()
     {
@@ -28,10 +29,14 @@ public class DrangAndMove : MonoBehaviour
                 int layerMask = 1 << LayerMask.NameToLayer("Wall");
                 if (Physics.Raycast(ray, out hitLayerMask, Mathf.Infinity, layerMask))
                 {
+                    
                     if (childObject.gameObject.activeInHierarchy){
                     if (distance == Vector3.zero) distance = this.transform.position - hitLayerMask.point;
-                        this.transform.position = hitLayerMask.point + distance;
+                        Vector3 targetPosition = hitLayerMask.point + distance;
+                       targetPosition.y = hitLayerMask.point.y;
+                        this.transform.position = targetPosition;
                     }
+                   
                 }
             }
             else if (touch.phase == TouchPhase.Ended)
