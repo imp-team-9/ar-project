@@ -28,7 +28,7 @@ public class ARObjectSpawner : MonoBehaviour
     void Awake()
     {
         imageManager = GetComponent<ARTrackedImageManager>();
-        
+
         foreach (PlaceablePrefabs prefab in prefabs)
         {
             GameObject newPrefab = Instantiate(prefab.prefab, Vector3.zero, Quaternion.identity);
@@ -45,7 +45,7 @@ public class ARObjectSpawner : MonoBehaviour
     {
         imageManager.trackedImagesChanged += OnImageChanged;
     }
-    
+
     private void OnDisable()
     {
         imageManager.trackedImagesChanged -= OnImageChanged;
@@ -62,7 +62,7 @@ public class ARObjectSpawner : MonoBehaviour
         {
             UpdateSpawned(image);
         }
-         
+
         foreach (ARTrackedImage image in args.removed)
         {
             spawnedPrefabs[image.referenceImage.name].gameObject.SetActive(false);
@@ -77,15 +77,17 @@ public class ARObjectSpawner : MonoBehaviour
         if (image.trackingState == TrackingState.Tracking)
         {
             spawned.gameObject.transform.position = image.transform.position;
-            if (name == "floor_plan2")
-            {
-                spawned.gameObject.transform.rotation = Quaternion.Euler(new Vector3(0, 180f, 0));
-            }if (name == "floor_plan1")
-            {
-                Debug.Log(image.transform.position);
-                spawned.gameObject.transform.rotation = Quaternion.Euler(new Vector3(0, 20f, 0));
-            }
+            spawned.gameObject.transform.position += new Vector3(-0.025f, 0, -0.1f);
 
+            if (image.transform.rotation.eulerAngles.x > 60 || image.transform.rotation.eulerAngles.z > 60 ||
+                image.transform.rotation.eulerAngles.x < -60 || image.transform.rotation.eulerAngles.z < -60)
+            {
+                spawned.gameObject.transform.rotation = image.transform.rotation;
+            }
+            else
+            {
+                spawned.gameObject.transform.rotation = Quaternion.Euler(0, image.transform.rotation.eulerAngles.y, 0);
+            }
 
             spawned.gameObject.SetActive(true);
         }
