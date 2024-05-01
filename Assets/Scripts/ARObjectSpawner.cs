@@ -28,7 +28,7 @@ public class ARObjectSpawner : MonoBehaviour
     void Awake()
     {
         imageManager = GetComponent<ARTrackedImageManager>();
-        
+
         foreach (PlaceablePrefabs prefab in prefabs)
         {
             GameObject newPrefab = Instantiate(prefab.prefab, Vector3.zero, Quaternion.identity);
@@ -45,7 +45,7 @@ public class ARObjectSpawner : MonoBehaviour
     {
         imageManager.trackedImagesChanged += OnImageChanged;
     }
-    
+
     private void OnDisable()
     {
         imageManager.trackedImagesChanged -= OnImageChanged;
@@ -62,7 +62,7 @@ public class ARObjectSpawner : MonoBehaviour
         {
             UpdateSpawned(image);
         }
-         
+
         foreach (ARTrackedImage image in args.removed)
         {
             spawnedPrefabs[image.referenceImage.name].gameObject.SetActive(false);
